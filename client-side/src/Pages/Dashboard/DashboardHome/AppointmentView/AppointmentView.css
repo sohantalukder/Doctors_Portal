@@ -1,0 +1,32 @@
+.table thead.thead-primary {
+	background: #1cc7c1;
+	border: 0;
+}
+.table thead th {
+	padding: 10px;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.table tbody tr {
+	margin-bottom: 10px;
+}
+
+.table tbody th,
+.table tbody td {
+	border: none;
+	padding: 30px;
+	font-size: 14px;
+	background: #fff;
+	vertical-align: middle;
+	border-bottom: 2px solid #f8f9fd;
+}
+.btn.btn-primary {
+	background: #1cc7c1;
+	color: #fff;
+	border-radius: 0;
+	border: 0;
+}
+table {
+	border-collapse: separate;
+}

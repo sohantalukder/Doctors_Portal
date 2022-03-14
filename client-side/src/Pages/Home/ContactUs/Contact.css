@@ -1,0 +1,18 @@
+.form-control {
+	background: #fff !important;
+	border: 1px solid #e6e6e6;
+	height: 50px;
+}
+.textarea {
+	height: 200px;
+}
+.form-control:active,
+.form-control:focus {
+	border-color: #5fc7c7;
+}
+.form-control:hover,
+.form-control:active,
+.form-control:focus {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}

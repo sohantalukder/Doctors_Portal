@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap');
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+/* Spinner*/
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.spinner {
+	animation: rotate 1s linear infinite;
+	background: blue;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	position: relative;
+}
+
+.spinner:before,
+.spinner:after {
+	content: '';
+	position: absolute;
+}
+
+.spinner:before {
+	border-radius: 50%;
+	background: linear-gradient(
+				0deg,
+				hsla(0, 0%, 100%, 1) 50%,
+				hsla(0, 0%, 100%, 0.9) 100%
+			)
+			0% 0%,
+		linear-gradient(
+				90deg,
+				hsla(0, 0%, 100%, 0.9) 0%,
+				hsla(0, 0%, 100%, 0.6) 100%
+			)
+			100% 0%,
+		linear-gradient(
+				180deg,
+				hsla(0, 0%, 100%, 0.6) 0%,
+				hsla(0, 0%, 100%, 0.3) 100%
+			)
+			100% 100%,
+		linear-gradient(
+				360deg,
+				hsla(0, 0%, 100%, 0.3) 0%,
+				hsla(0, 0%, 100%, 0) 100%
+			)
+			0% 100%;
+	background-repeat: no-repeat;
+	background-size: 50% 50%;
+	top: -1px;
+	bottom: -1px;
+	left: -1px;
+	right: -1px;
+}
+
+.spinner:after {
+	background: #e8eaf6;
+	border-radius: 50%;
+	top: 3%;
+	bottom: 3%;
+	left: 3%;
+	right: 3%;
+}
